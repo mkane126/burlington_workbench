@@ -1,0 +1,23 @@
+
+<div class="report">
+    <div class="float-layout">
+        <a href ={{report.url}}>
+        <img src= {{report.IMG}} width="180px" height="180px" align="left" >
+        </a>
+        <h3> {{ report.name }} </h3>
+        <p> {{ report.description }} </p>
+        <p> {{ toolTypeConv() }} </p>
+        <p> {{ toolGroupConv() }} </p>
+        <p> {{ dateFormat() }} </p> 
+    </div>
+    <div *ngIf="admin">
+        <div class="container">
+            <div class="btn-holder">
+                <button type="button" class="btn btn-default btn-sm" (click)="openDialog()">
+                    Edit
+                </button>
+            </div>
+        </div> 
+    </div>
+       
+</div>

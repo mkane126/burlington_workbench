@@ -1,0 +1,15 @@
+<div class="form-group">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Search..."
+    [(ngModel)]="filterTerm"
+  />
+</div>
+<div class = "report-data">
+  <app-report-item
+    *ngFor="let report of filter(reports)"
+    [report]="report"
+    [admin]=admin
+  ></app-report-item>
+</div>

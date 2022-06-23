@@ -1,0 +1,36 @@
+<h2>New Merchant Workbench Tool</h2>
+<mat-dialog-content>Got a new tool to add?</mat-dialog-content>
+<p>Name</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.name">
+  </mat-form-field>
+<p>Description</p>
+    <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea matInput [(ngModel)]="data.description"></textarea>
+    </mat-form-field>
+<p>Tool type</p>
+    <mat-form-field appearance="fill">
+        <mat-label>Tool type</mat-label>
+        <input matInput [(ngModel)]="data.tool_type">
+    </mat-form-field>
+<p>Tool group</p>
+    <mat-form-field appearance="fill">
+        <mat-label>Tool Group</mat-label>
+        <input matInput [(ngModel)]="data.tool_group">
+    </mat-form-field>
+<p>URL</p>
+    <mat-form-field appearance="fill">
+        <mat-label>URL</mat-label>
+        <input matInput [(ngModel)]="data.url">
+    </mat-form-field>
+<p>IMG</p>
+    <mat-form-field appearance="fill">
+        <mat-label>IMG</mat-label>
+        <input matInput [(ngModel)]="data.img">
+    </mat-form-field>
+<mat-dialog-actions>
+    <button mat-raised-button [mat-dialog-close]="data" cdkFocusInitial>Save</button>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+</mat-dialog-actions>

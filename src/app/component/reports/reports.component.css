@@ -1,0 +1,9 @@
+.report-data {
+    display: flex;
+    flex-wrap: wrap;
+  }
+input{
+    width: 100%;
+    height: 30px;
+}
+  

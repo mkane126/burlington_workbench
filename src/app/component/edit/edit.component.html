@@ -1,0 +1,43 @@
+<h2>Edit Merchant Workbench Tool</h2>
+<h3>Edit a tool</h3>
+
+    <p>Tool ID</p>
+    <mat-form-field appearance="fill">
+        <mat-label>Tool ID</mat-label>
+        <input placeholder={{data.toolID}} matInput [(ngModel)]="data.toolID" readonly>
+    </mat-form-field>
+    <p>Name</p>
+    <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="data.name">
+    </mat-form-field>
+    <p>Description</p>
+        <mat-form-field appearance="fill">
+            <mat-label>Description</mat-label>
+            <textarea matInput [(ngModel)]="data.description">{{data.description}}</textarea>
+        </mat-form-field>
+    <p>Tool type</p>
+        <mat-form-field appearance="fill">
+            <mat-label>Tool type</mat-label>
+            <input value={{data.tool_type}} matInput [(ngModel)]="data.tool_type">
+        </mat-form-field>
+    <p>Tool group</p>
+        <mat-form-field appearance="fill">
+            <mat-label>Tool Group</mat-label>
+            <input value={{data.tool_group}} matInput [(ngModel)]="data.tool_group">
+        </mat-form-field>
+    <p>URL</p>
+        <mat-form-field appearance="fill">
+            <mat-label>URL</mat-label>
+            <input value={{data.url}} matInput [(ngModel)]="data.url">
+        </mat-form-field>
+    <p>IMG</p>
+        <mat-form-field appearance="fill">
+            <mat-label>IMG</mat-label>
+            <input value={{data.img}} matInput [(ngModel)]="data.img">
+        </mat-form-field>
+
+<mat-dialog-actions>
+    <button mat-raised-button [mat-dialog-close]="data" cdkFocusInitial>Save</button>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+</mat-dialog-actions>

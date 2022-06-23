@@ -1,0 +1,14 @@
+p{
+    margin:0;
+}
+
+input{
+    margin:0;
+    width: 250px;
+    height: 20px;
+}
+
+textarea{
+    width: 250px;
+    height: 65px;
+}
